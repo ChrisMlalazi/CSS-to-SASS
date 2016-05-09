@@ -1,0 +1,182 @@
+
+/**************************
+MEDIA QUERIES
+***************************/
+
+
+@media screen and (max-width: 767px) {
+
+.bottomfooter {
+  display: none;
+
+}
+
+}
+
+
+
+@media screen and (min-width: 768px){
+	
+
+/**************************
+INDEX
+***************************/
+
+.profile-image {
+	float: right;
+	width: 40%;
+	display: inline-block;
+	padding-bottom: 30px;
+	border-radius: 10px;
+}
+
+.blurb {
+	width: 40%;
+	font-weight: bold;
+	float: left;
+	margin-left: 20px;
+	margin-top: 50px;
+	display: inline-block;
+
+}
+
+
+.set {
+   display: inline-block;
+   background-color: #d3d3d3;
+
+}
+
+
+.block li{
+	display: inline-block;
+} 
+
+
+.footer {
+	clear: both;
+	margin-top: 20px;
+	margin-bottom: -40px;
+}
+
+
+.bottomfooter {
+
+	margin-top: 0;
+	background: red;
+}
+
+
+.bottomname {
+  float: left;
+  margin-top: 35px;
+  margin-left: 40px;
+  font-weight: bold;
+
+}
+
+.bottomnav {
+
+	float: right;
+
+}
+
+.bottomnav li{
+
+	float: right;
+	margin-left: 10px;
+	margin-right: 40px;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+.bottomnav a:hover {
+	color: red;
+}
+
+.pusher {
+	height: 30px;
+}
+
+
+/**************************
+PORTFOLIO
+***************************/
+
+
+#gallery li {
+	float: left;
+	width: 40%;
+	margin: 5%;
+	color: black;
+}
+
+.direction {
+	display: none;
+}
+
+}
+
+
+@media screen and (min-width: 1024px){
+
+/**************************
+INDEX PAGE
+***************************/
+
+
+.set {
+
+	margin-top: 100px;
+}
+
+
+
+.block li{
+	display: inline-block;
+} 
+
+header {
+	float: left;
+	margin-left: 40px;
+}
+
+.menu {
+	float: right;
+}
+
+
+.footer {
+	clear: both;
+}
+
+.direction {
+	display: none;
+}
+
+/**************************
+PORTFOLIO
+***************************/
+
+#gallery li {
+	width:  25%;
+	margin: 3.8%;
+	background-color: #f5f5f5;
+	color: black;	
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
