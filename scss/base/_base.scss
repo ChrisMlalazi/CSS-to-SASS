@@ -29,15 +29,6 @@ body {
 }
 
 
-a {
-  text-decoration: none;
-  color: #000000;
-}
-
-a:hover {
-  color: yellow;
-
-}
 
 
 ul li{
@@ -47,29 +38,31 @@ ul li{
 	margin: 20px
 }
 
-a {
 
-	text-decoration: none;
-}
 
 img {
 	max-width: 100%;
 }
 
-.profile-image {
+.profile {
+
+  &-image {
 	height: 250px;
 	margin: 10px 10px;
     background: url('../images/travel2.jpg') no-repeat;
     background-size: cover;
 }
 
-.profile-picture {
+   &-picture {
 	height: 200px;
 	width: 200px;
 	border-radius: 100px;
 	border: 2px green solid;
 	margin-top: 20px;
 }
+
+}
+
 
 
 .button {
@@ -99,12 +92,51 @@ img {
 }
 
 .top {
-	font-size: 0.8em;
-	float: right;
-	margin-right: 20px;
-
+	& {
+		font-size: 0.8em;
+		float: right;
+		margin-right: 20px;
+	}
+	&:hover {
+		color: red;
+	}
 }
 
-.top a:hover {
-	color: red;
+
+a {
+	& {
+	  text-decoration: none;
+	  color: #000000;
+	}
+	&:hover {
+	  color: yellow;
+	}
+
+	&.social {
+	  display: inline-block;
+	  text-indent: -9999px;
+	  margin-left: 5px;
+	  width: 50px;
+	  height: 50px;
+	  background-size: 50px;
+	  background-repeat: no-repeat;
+	  opacity: .7;
+	  transition: all .5s;
+	}
+
+	&.twitter {
+	  background-image: url(../images/twitter.svg);
+	}
+
+	&.linkedin {
+	  background-image: url(../images/linkedin.svg);
+	}
+	 &.github {
+	  background-image: url(../images/github.svg);
+	}
+
+	&.social:hover {
+	  opacity: 1;
+	}
 }
+
