@@ -22,6 +22,10 @@ MEDIA QUERIES
 INDEX
 ***************************/
 
+.floatRight {
+	float: right;
+}
+
 .profile-image {
 	float: right;
 	width: 40%;
@@ -141,9 +145,9 @@ header {
 	margin-left: 40px;
 }
 
-.menu {
-	float: right;
-}
+// .menu {
+// 	float: right;
+// }
 
 
 .footer {
