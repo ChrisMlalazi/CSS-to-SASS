@@ -16,7 +16,8 @@ body {
 	margin: 0 auto;
 	background-color: #f5deb3;
     font-family: "Open Sans", sans-serif; 
-
+    margin: 0 auto;
+    max-width: 1300px;
 }
 
 .menu {
@@ -35,6 +36,13 @@ body {
 	display: block;
 	margin-bottom: 10px;
 	
+}
+
+header {
+ 	margin-bottom: -30px;
+ 	padding-left: 35px;
+
+
 }
 
 .name {

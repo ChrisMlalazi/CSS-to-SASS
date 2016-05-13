@@ -90,8 +90,15 @@ INDEX
 .bottomnav {
 
 	float: right;
-
+	margin-top: 30px;
 }
+
+.bottomfooter ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+
 
 .bottomnav li{
 
@@ -100,6 +107,11 @@ INDEX
 	margin-right: 40px;
 	padding-left: 10px;
 	font-weight: bold;
+
+}
+
+.bottomnav li a {
+	text-decoration: none;
 }
 
 .bottomnav a:hover {
