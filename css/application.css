@@ -12,30 +12,45 @@ Base styles
 body {
   text-align: center;
   margin: 0 auto;
-  background-color: #f5deb3; }
+  background-color: #f5deb3;
+  font-family: "Open Sans", sans-serif; }
 
 .menu {
   margin-top: 0;
   overflow: hidden; }
 
 .block li {
-  display: block;
-  margin-bottom: 40px; }
-
-ul li {
   list-style-type: none;
   display: inline-block;
   margin-left: 15px;
-  margin: 20px; }
+  margin: 20px;
+  font-weight: bold;
+  font-size: 1em;
+  display: block;
+  margin-bottom: 10px; }
+
+.name {
+  font-family: "Oswald", sans-serif; }
+
+img:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  transform: skewY(1.5deg); }
 
 img {
-  max-width: 100%; }
+  max-width: 90%;
+  transition: transform .5s;
+  transition-property: box-shadow;
+  transition-duration: .4s;
+  margin-bottom: 30px;
+  border: 2px solid white; }
 
 .profile-image {
   height: 250px;
-  margin: 10px 10px;
+  width: 80%;
+  margin: 10px auto;
   background: url("../images/travel2.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  border: 2px solid white; }
 .profile-picture {
   height: 200px;
   width: 200px;
@@ -43,21 +58,9 @@ img {
   border: 2px green solid;
   margin-top: 20px; }
 
-.button {
-  height: 25px;
-  width: 100%;
-  border-radius: 10%;
-  border: 2px solid red;
-  font-size: 0.8em;
-  background: purple;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  font-weight: bold; }
-
 .blurb {
-  font-weight: bold;
-  margin: 10px; }
+  margin: 10px;
+  font-family: 'kalam', sans-serif; }
 
 .bottom {
   font-size: 0.8em;
@@ -75,7 +78,7 @@ a {
   text-decoration: none;
   color: #000000; }
 a:hover {
-  color: yellow; }
+  color: black; }
 a.social {
   display: inline-block;
   text-indent: -9999px;
@@ -94,6 +97,19 @@ a.github {
   background-image: url(../images/github.svg); }
 a.social:hover {
   opacity: 1; }
+
+li {
+  transition: transform .5s; }
+
+.block li:hover {
+  transform: scale(1.3);
+  transition: transform .5s; }
+
+.set {
+  margin-top: -10px; }
+
+.portfolio {
+  margin-top: 50px; }
 
 /**************************
 Hamburger Menu
@@ -133,7 +149,11 @@ nav li:last-child {
     transition: height 0.3s linear; }
 
   .slide-down {
-    height: 200px; } }
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+    margin-top: -5px;
+    overflow: hidden; } }
 @media only screen and (min-width: 481px) {
   .filler {
     background: url("../images/travel2.jpg") no-repeat;
@@ -150,30 +170,32 @@ MEDIA QUERIES
   /**************************
   INDEX
   ***************************/
-  .floatRight {
-    float: right; }
-
   .profile-image {
     float: right;
     width: 40%;
     display: inline-block;
     padding-bottom: 30px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    margin-right: 60px; }
 
   .blurb {
-    width: 40%;
-    font-weight: bold;
+    width: 45%;
     float: left;
     margin-left: 20px;
-    margin-top: 50px;
+    margin-top: 0;
     display: inline-block; }
 
   .set {
     display: inline-block;
     background-color: #d3d3d3; }
 
+  .block {
+    margin-bottom: 40px;
+    margin-top: 20px; }
+
   .block li {
-    display: inline-block; }
+    display: inline-block;
+    padding: 0; }
 
   .footer {
     clear: both;
@@ -217,6 +239,12 @@ MEDIA QUERIES
 
   .direction {
     display: none; } }
+@media screen and (min-width: 900px) {
+  #gallery li {
+    float: left;
+    width: 35%;
+    margin: 5%;
+    color: black; } }
 @media screen and (min-width: 1024px) {
   /**************************
   INDEX PAGE
@@ -241,16 +269,16 @@ MEDIA QUERIES
   PORTFOLIO
   ***************************/
   #gallery li {
-    width: 25%;
-    margin: 3.8%;
-    background-color: #f5f5f5;
+    float: left;
+    width: 20%;
+    margin: 3%;
     color: black; } }
 /****************************
 GALLERY
 *****************************/
 #gallery {
   max-width: 100%;
-  margin: 10px;
+  margin: 40px 10px 10px 10px;
   padding: 0;
   list-style: none; }
 
@@ -276,6 +304,7 @@ FOOTER
   clear: both; }
 
 .contact {
-  margin-top: 200px; }
+  margin-top: 80px;
+  clear: both; }
 
 /*# sourceMappingURL=application.css.map */

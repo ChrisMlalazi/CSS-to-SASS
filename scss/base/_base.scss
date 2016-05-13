@@ -15,6 +15,7 @@ body {
 	text-align: center;
 	margin: 0 auto;
 	background-color: #f5deb3;
+    font-family: "Open Sans", sans-serif; 
 
 }
 
@@ -23,34 +24,50 @@ body {
 	overflow: hidden;
 }
 
+
 .block li{
-	display: block;
-	margin-bottom: 40px;
-}
-
-
-
-
-ul li{
 	list-style-type: none;
 	display: inline-block;
 	margin-left: 15px;
-	margin: 20px
+	margin: 20px;
+	font-weight: bold;
+	font-size: 1em;
+	display: block;
+	margin-bottom: 10px;
+	
+}
+
+.name {
+	 font-family: "Oswald", sans-serif; 
 }
 
 
+img:hover {
+  
+  box-shadow: 0 0 15px rgba(0,0, 0, .7);
+  transform:skewY(1.5deg);
+ 
+
+}
 
 img {
-	max-width: 100%;
+	max-width: 90%;
+	transition: transform .5s;
+	transition-property: box-shadow;
+    transition-duration:  .4s;
+    margin-bottom: 30px;
+    border: 2px solid white;
 }
 
 .profile {
 
   &-image {
 	height: 250px;
-	margin: 10px 10px;
+	width: 80%;
+	margin: 10px auto;
     background: url('../images/travel2.jpg') no-repeat;
     background-size: cover;
+    border: 2px solid white;
 }
 
    &-picture {
@@ -63,24 +80,9 @@ img {
 
 }
 
-
-
-.button {
-  height: 25px;
-  width: 100%;
-  border-radius: 10%;
-  border: 2px solid red;
-  font-size: 0.8em;
-  background: purple;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-}
-
 .blurb {
-	font-weight: bold;
 	margin: 10px;
+	font-family: 'kalam', sans-serif;
 
 
 }
@@ -109,7 +111,9 @@ a {
 	  color: #000000;
 	}
 	&:hover {
-	  color: yellow;
+	  color: black;
+
+
 	}
 
 	&.social {
@@ -139,4 +143,25 @@ a {
 	  opacity: 1;
 	}
 }
+
+li {
+	transition: transform .5s;
+}
+
+.block li:hover {
+	transform: scale(1.3);
+	transition: transform .5s;
+
+}
+
+.set {
+	margin-top: -10px;
+}
+
+.portfolio {
+	margin-top: 50px;
+}
+
+
+
 
