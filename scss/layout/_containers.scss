@@ -22,6 +22,14 @@ MEDIA QUERIES
 INDEX
 ***************************/
 
+ #gallery li:nth-child(3n) {
+    clear: left;
+  }
+
+   #gallery li:nth-child(6n) {
+    clear: right;
+  }
+
 .profile-image {
 	float: right;
 	width: 40%;
@@ -121,18 +129,7 @@ PORTFOLIO
 
 }
 
-@media screen and (min-width: 900px) {
-	
 
-
-#gallery li {
-	float: left;
-	width: 35%;
-	margin: 5%;
-	color: black;
-}
-
-}
 
 
 
@@ -142,6 +139,13 @@ PORTFOLIO
 INDEX PAGE
 ***************************/
 
+#gallery li:nth-child(3n) {
+    clear: right;
+  }
+
+   #gallery li:nth-child(6n) {
+    clear: right;
+  }
 
 .set {
 
@@ -179,8 +183,8 @@ PORTFOLIO
 
 #gallery li {
 	float: left;
-	width: 20%;
-	margin: 3%;
+	width: 28%;
+	margin: 2%;
 	color: black;
 }
 
