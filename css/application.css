@@ -17,6 +17,10 @@ body {
   margin: 0 auto;
   max-width: 1300px; }
 
+header {
+  margin-bottom: -30px;
+  padding-left: 35px; }
+
 .menu {
   margin-top: 0;
   overflow: hidden; }
@@ -31,17 +35,12 @@ body {
   display: block;
   margin-bottom: 10px; }
 
-header {
-  margin-bottom: -30px;
-  padding-left: 35px; }
-
 .name {
   font-family: "Oswald", sans-serif; }
 
 img:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-  transform: skewY(1.5deg); }
-
+  box-shadow: 0 0 15px black;
+  transform: skewY(2deg); }
 img {
   max-width: 90%;
   transition: transform .5s;
@@ -106,7 +105,6 @@ a.social:hover {
 
 li {
   transition: transform .5s; }
-
 .block li:hover {
   transform: scale(1.3);
   transition: transform .5s; }
@@ -117,9 +115,6 @@ li {
 .portfolio {
   margin-top: 50px; }
 
-/**************************
-Hamburger Menu
-***************************/
 /**************************
 Contact
 ***************************/
@@ -136,6 +131,15 @@ body {
 nav li:last-child {
   border-right: none; }
 
+/**************************
+MEDIA QUERIES
+***************************/
+@media only screen and (min-width: 481px) {
+  .filler {
+    background: url("../images/travel2.jpg") no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: -150px; } }
 @media only screen and (max-width: 767px) {
   .hamburger {
     padding: 15px;
@@ -159,28 +163,31 @@ nav li:last-child {
     background-color: rgba(0, 0, 0, 0.1);
     margin-bottom: 0;
     margin-top: -5px;
-    overflow: hidden; } }
-@media only screen and (min-width: 481px) {
-  .filler {
-    background: url("../images/travel2.jpg") no-repeat;
-    background-size: cover;
-    margin-top: 30px;
-    margin-bottom: -150px; } }
-/**************************
-MEDIA QUERIES
-***************************/
-@media screen and (max-width: 767px) {
+    overflow: hidden; }
+
   .bottomfooter {
     display: none; } }
 @media screen and (min-width: 768px) {
   /**************************
   INDEX
   ***************************/
+  header {
+    float: left;
+    margin-left: 40px; }
+
+  .menu {
+    float: right;
+    margin-right: 40px; }
+
   #gallery li:nth-child(3n) {
     clear: left; }
-
   #gallery li:nth-child(6n) {
     clear: right; }
+  #gallery li {
+    float: left;
+    width: 40%;
+    margin: 5%;
+    color: black; }
 
   .profile-image {
     float: right;
@@ -197,6 +204,10 @@ MEDIA QUERIES
     margin-top: 0;
     display: inline-block; }
 
+  .menu a {
+    color: black;
+    font-family: 'Oswald', sans-serif; }
+
   .set {
     display: inline-block;
     background-color: #d3d3d3; }
@@ -204,7 +215,6 @@ MEDIA QUERIES
   .block {
     margin-bottom: 40px;
     margin-top: 20px; }
-
   .block li {
     display: inline-block;
     padding: 0; }
@@ -214,34 +224,29 @@ MEDIA QUERIES
     margin-top: 20px;
     margin-bottom: -40px; }
 
-  .bottomfooter {
-    margin-top: 0;
-    background: red; }
-
   .bottomname {
     float: left;
     margin-top: 35px;
     margin-left: 40px;
     font-weight: bold; }
 
-  .bottomnav {
-    float: right;
-    margin-top: 30px; }
-
   .bottomfooter ul {
     list-style: none;
     padding-left: 0; }
 
+  .bottomnav {
+    float: right;
+    margin-top: 30px; }
   .bottomnav li {
     float: right;
     margin-left: 10px;
     margin-right: 40px;
     padding-left: 10px;
     font-weight: bold; }
-
   .bottomnav li a {
-    text-decoration: none; }
-
+    text-decoration: none;
+    color: black;
+    font-family: 'Oswald', sans-serif; }
   .bottomnav a:hover {
     color: red; }
 
@@ -251,12 +256,6 @@ MEDIA QUERIES
   /**************************
   PORTFOLIO
   ***************************/
-  #gallery li {
-    float: left;
-    width: 40%;
-    margin: 5%;
-    color: black; }
-
   .direction {
     display: none; } }
 @media screen and (min-width: 1024px) {
@@ -265,19 +264,19 @@ MEDIA QUERIES
   ***************************/
   #gallery li:nth-child(3n) {
     clear: right; }
-
   #gallery li:nth-child(6n) {
     clear: right; }
+  #gallery li {
+    float: left;
+    width: 28%;
+    margin: 2%;
+    color: black; }
 
   .set {
-    margin-top: 100px; }
+    margin-top: 10px; }
 
   .block li {
     display: inline-block; }
-
-  header {
-    float: left;
-    margin-left: 40px; }
 
   .footer {
     clear: both; }
@@ -288,11 +287,16 @@ MEDIA QUERIES
   /**************************
   PORTFOLIO
   ***************************/
-  #gallery li {
+  header {
     float: left;
-    width: 28%;
-    margin: 2%;
-    color: black; } }
+    margin-left: 40px; }
+
+  .menu {
+    float: right;
+    margin-right: 40px; }
+  .menu li a {
+    color: black;
+    font-family: 'Oswald', sans-serif; } }
 /****************************
 GALLERY
 *****************************/
@@ -326,7 +330,6 @@ FOOTER
 .contact {
   margin-top: 80px;
   clear: both; }
-
 .contact p {
   font-family: 'kalam', sans-serif; }
 

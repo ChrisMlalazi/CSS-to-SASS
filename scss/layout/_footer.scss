@@ -18,6 +18,7 @@ FOOTER
 	   list-style-type: none;
 	   margin: 0;
 	   padding: 0;
+
 	}
 
 	& ul li {
@@ -33,12 +34,19 @@ FOOTER
 }
 
 .contact {
-  margin-top: 80px;
-  clear: both;
+    
+	   & {
+	  margin-top: 80px;
+	  clear: both;
 
+	}
+	  & p {
+	   font-family: 'kalam', sans-serif;
+
+	}
 }
 
-.contact p {
-   font-family: 'kalam', sans-serif;
 
-}
+
+
+
