@@ -17,27 +17,6 @@ body {
   margin: 0 auto;
   max-width: 1300px; }
 
-header {
-  margin-bottom: -30px;
-  padding-left: 35px; }
-
-.menu {
-  margin-top: 0;
-  overflow: hidden; }
-
-.block li {
-  list-style-type: none;
-  display: inline-block;
-  margin-left: 15px;
-  margin: 20px;
-  font-weight: bold;
-  font-size: 1em;
-  display: block;
-  margin-bottom: 10px; }
-
-.name {
-  font-family: "Oswald", sans-serif; }
-
 img:hover {
   box-shadow: 0 0 15px black;
   transform: skewY(2deg); }
@@ -67,17 +46,27 @@ img {
   margin: 10px;
   font-family: 'kalam', sans-serif; }
 
-.bottom {
-  font-size: 0.8em;
-  float: left;
-  margin-left: 20px; }
-
 .top {
   font-size: 0.8em;
   float: right;
   margin-right: 20px; }
 .top:hover {
   color: red; }
+
+li {
+  transition: transform .5s; }
+.block li:hover {
+  transform: scale(1.3);
+  transition: transform .5s; }
+
+.set {
+  margin-top: -10px; }
+
+.portfolio {
+  margin-top: 50px; }
+
+h2 {
+  font-size: 1em; }
 
 a {
   text-decoration: none;
@@ -103,18 +92,6 @@ a.github {
 a.social:hover {
   opacity: 1; }
 
-li {
-  transition: transform .5s; }
-.block li:hover {
-  transform: scale(1.3);
-  transition: transform .5s; }
-
-.set {
-  margin-top: -10px; }
-
-.portfolio {
-  margin-top: 50px; }
-
 /**************************
 Contact
 ***************************/
@@ -124,12 +101,34 @@ Contact
   margin-top: 0;
   margin-bottom: -150px; }
 
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+header {
+  margin-bottom: -30px;
+  padding-left: 35px; }
 
 nav li:last-child {
   border-right: none; }
+
+.menu {
+  margin-top: 0;
+  overflow: hidden; }
+
+.name {
+  font-family: "Oswald", sans-serif; }
+
+.block li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 15px;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 1em;
+  display: block;
+  margin-bottom: 10px; }
+
+.bottom {
+  font-size: 0.8em;
+  float: left;
+  margin-left: 20px; }
 
 /**************************
 MEDIA QUERIES
@@ -305,9 +304,6 @@ GALLERY
   margin: 40px 10px 10px 10px;
   padding: 0;
   list-style: none; }
-
-h2 {
-  font-size: 1em; }
 
 /******************************
 FOOTER

@@ -12,10 +12,11 @@ Contact
 }
 
 
-body {
+header {
+ 	margin-bottom: -30px;
+ 	padding-left: 35px;
 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
 }
 
 
@@ -23,7 +24,32 @@ nav li:last-child {
   border-right: none;
 }
 
+.menu {
+	margin-top: 0;
+	overflow: hidden;
+}
 
+.name {
+	 font-family: "Oswald", sans-serif; 
+}
+
+.block li{
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 15px;
+	margin: 20px;
+	font-weight: bold;
+	font-size: 1em;
+	display: block;
+	margin-bottom: 10px;
+	
+}
+
+.bottom {
+	font-size: 0.8em;
+	float: left;
+	margin-left: 20px; 
+}
 
 
 

@@ -20,36 +20,6 @@ body {
     max-width: 1300px;
 }
 
-header {
- 	margin-bottom: -30px;
- 	padding-left: 35px;
-
-
-}
-
-.menu {
-	margin-top: 0;
-	overflow: hidden;
-}
-
-
-.block li{
-	list-style-type: none;
-	display: inline-block;
-	margin-left: 15px;
-	margin: 20px;
-	font-weight: bold;
-	font-size: 1em;
-	display: block;
-	margin-bottom: 10px;
-	
-}
-
-
-
-.name {
-	 font-family: "Oswald", sans-serif; 
-}
 
 img {
 
@@ -101,11 +71,7 @@ img {
 
 }
 
-.bottom {
-	font-size: 0.8em;
-	float: left;
-	margin-left: 20px; 
-}
+
 
 .top {
 	& {
@@ -117,47 +83,6 @@ img {
 		color: red;
 	}
 }
-
-
-a {
-	& {
-	  text-decoration: none;
-	  color: #000000;
-	}
-	&:hover {
-	  color: black;
-
-
-	}
-
-	&.social {
-	  display: inline-block;
-	  text-indent: -9999px;
-	  margin-left: 5px;
-	  width: 50px;
-	  height: 50px;
-	  background-size: 50px;
-	  background-repeat: no-repeat;
-	  opacity: .7;
-	  transition: all .5s;
-	}
-
-	&.twitter {
-	  background-image: url(../images/twitter.svg);
-	}
-
-	&.linkedin {
-	  background-image: url(../images/linkedin.svg);
-	}
-	 &.github {
-	  background-image: url(../images/github.svg);
-	}
-
-	&.social:hover {
-	  opacity: 1;
-	}
-}
-
 
 li {
 
