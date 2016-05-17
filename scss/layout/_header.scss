@@ -5,7 +5,7 @@
 .filler {
 	@extend %margin;
 	margin-bottom: -150px;
-	background: url('../images/travel2.jpg') no-repeat;
+	background: url('#{$path-img}/travel2.jpg') no-repeat;
     background-size: cover;
 	
 	
@@ -30,7 +30,7 @@ nav li:last-child {
 }
 
 .name {
-	 font-family: "Oswald", Arial, sans-serif; 
+	 font-family: $stack-oswald; 
 }
 
 .block li{

@@ -7,7 +7,7 @@
  $wheat             : #f5deb3;
  $green             : #006600;
  $red               : #FF0000;
- $lightgray         : #d3d3d3;
+ $gray              : #d3d3d3;
 
  //Functional color variables
 
@@ -17,10 +17,14 @@
  $color-image        : $green;
  $color-hover        : $red ;
  $color-body         : $wheat; 
- $color-gray         : $lightgray;
+ $color-last         : $gray;
 
  //Font Stack
 
- $stack-sans-serif   :"Open Sans", Arial, sans-serif; 
- $stack-kalam        ;'kalam', Arial, $stack-sans-serif;
- $stack-oswald       ; 'Oswald', Arial, $stack-sans-serif;
+ $stack-sans-serif   :'Open Sans', Arial, sans-serif; 
+ $stack-kalam        :'Kalam', Arial, $stack-sans-serif;
+ $stack-oswald       :'Oswald', Arial, $stack-sans-serif;
+
+ //Asset paths
+
+ $path-img  : '../images';
