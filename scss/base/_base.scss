@@ -35,8 +35,8 @@ img {
 
 & {
 	@extend %border;
+	@extend %transition;
 	max-width: 90%;
-	transition: transform .5s;
 	transition-property: box-shadow;
     transition-duration:  .4s;
     margin-bottom: 30px;
@@ -74,9 +74,10 @@ img {
 
 .top {
 	& {
-		font-size: 0.8em;
+		@include text(0.8em, bold, #000);
 		float: right;
 		margin-right: 20px;
+		
 	}
 	&:hover {
 		color:  $color-hover;

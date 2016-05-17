@@ -22,7 +22,6 @@ img:hover {
   transform: skewY(2deg); }
 img {
   max-width: 90%;
-  transition: transform .5s;
   transition-property: box-shadow;
   transition-duration: .4s;
   margin-bottom: 30px;
@@ -44,6 +43,8 @@ img {
 
 .top {
   font-size: 0.8em;
+  font-weight: bold;
+  color: #000;
   float: right;
   margin-right: 20px; }
 .top:hover {
@@ -58,7 +59,7 @@ img {
 .portfolio {
   margin-top: 50px; }
 
-li, .block li:hover {
+img, li, .block li:hover {
   transition: transform .5s; }
 
 img, .profile-image, .profile-picture {
@@ -129,7 +130,8 @@ nav li:last-child {
   font-weight: bold;
   font-size: 1em;
   display: block;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  color: #000; }
 
 .bottom {
   font-size: 0.8em;
