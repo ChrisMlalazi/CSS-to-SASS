@@ -10,7 +10,7 @@ FOOTER
     }
 
 	& .copyright {
-	   font-size: .9em;
+		@include text(0.7em, bold, green);
 	   padding-bottom: 20px;
 	}
 
