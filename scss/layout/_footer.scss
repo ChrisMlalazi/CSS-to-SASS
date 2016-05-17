@@ -30,21 +30,24 @@ FOOTER
 
 
 .clearfix {
-  clear: both;
+ @extend %clear;
 }
+
 
 .contact {
     
 	   & {
 	  margin-top: 80px;
-	  clear: both;
+	   @extend %clear;
 
 	}
 	  & p {
-	   font-family: 'kalam', sans-serif;
+	   font-family: 'kalam', Arial, sans-serif;
 
 	}
 }
+
+
 
 
 

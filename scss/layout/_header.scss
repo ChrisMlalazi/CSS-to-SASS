@@ -1,13 +1,13 @@
 
-/**************************
-Contact
-***************************/
+
+
 
 .filler {
+	@extend %margin;
+	margin-bottom: -150px;
 	background: url('../images/travel2.jpg') no-repeat;
     background-size: cover;
-	margin-top: 0;
-	margin-bottom: -150px;
+	
 	
 }
 
@@ -25,18 +25,16 @@ nav li:last-child {
 }
 
 .menu {
-	margin-top: 0;
+	@extend %margin;
 	overflow: hidden;
 }
 
 .name {
-	 font-family: "Oswald", sans-serif; 
+	 font-family: "Oswald", Arial, sans-serif; 
 }
 
 .block li{
-	list-style-type: none;
-	display: inline-block;
-	margin-left: 15px;
+	list-style: none;
 	margin: 20px;
 	font-weight: bold;
 	font-size: 1em;
