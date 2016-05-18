@@ -45,6 +45,7 @@ nav li:last-child {
 	 @include minWidth {
       color: $color-prim;
 	  font-family: $stack-oswald;
+
  	}
 }
 
@@ -75,6 +76,7 @@ Hamburger Menu
     .hamburger {
     padding: 15px;
     display: block;
+
   }
 
   .line {
@@ -87,7 +89,9 @@ Hamburger Menu
 
 
   nav li {
-    width: 70%;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 100px;
 
   }
   
