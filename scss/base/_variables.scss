@@ -28,4 +28,8 @@
  //Asset paths
 
  $path-img  : '../images';
- // $path-font: 
+
+//Media Query Breakpoints
+
+$brk-minlarge        :'(min-width: 768px)';
+$brk-extra           :'(min-width: 1024px)';

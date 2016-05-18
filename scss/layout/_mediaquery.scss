@@ -1,23 +1,12 @@
 
 /**************************
-MEDIA QUERIES
+MEDIA QUERIES 
 ***************************/
 
-@media only screen and (min-width: 481px) {
+/*****************
+Hamburger Menu
 
-.filler {
-	background: url('#{$path-img}/travel2.jpg') no-repeat;
-    background-size: cover;
-	margin-top: 30px;
-	margin-bottom: -150px;
-	
-}
-
-
-}
-
-
-
+******************/
 
 @media only screen and (max-width: 767px) {
   
@@ -27,7 +16,8 @@ MEDIA QUERIES
   }
 
   .line {
-    border-bottom: 4px solid black;
+    border-bottom: 4px solid;
+    color: #000;
     width: 35px;
     margin-bottom: 6px;
   }
@@ -70,46 +60,6 @@ MEDIA QUERIES
 INDEX
 ***************************/
 
-
-header {
-	float: left;
-	margin-left: 40px;
-}
-
-.menu {
-
-	float: right;
-	margin-right: 40px;
-}
-
-#gallery {
-
-	 & li:nth-child(3n) {
-    clear: left;
-  }
-
-	   & li:nth-child(6n) {
-	    clear: right;
-	  }
-
-	  & li {
-		float: left;
-		width: 40%;
-		margin: 5%;
-		color: $color-prim;
-}
-
-}
-
-
-.profile-image {
-	float: right;
-	width: 40%;
-	display: inline-block;
-	padding-bottom: 30px;
-	border-radius: 10px;
-	margin-right: 60px;
-}
 
 .blurb {
 	width: 45%;

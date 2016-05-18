@@ -56,6 +56,15 @@ img {
     background: url('#{$path-img}/travel2.jpg') no-repeat;
     background-size: cover;
     color: $color-sec;
+
+    @media #{$brk-minlarge} {
+      float: right;
+	  width: 40%;
+	  display: inline-block;
+	  padding-bottom: 30px;
+	 border-radius: 10px;
+	 margin-right: 60px;
+ 	}
 }
 
    &-picture {

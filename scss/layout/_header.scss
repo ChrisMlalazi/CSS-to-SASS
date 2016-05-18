@@ -1,20 +1,12 @@
 
-
-
-
-.filler {
-	@extend %margin;
-	margin-bottom: -150px;
-	background: url('#{$path-img}/travel2.jpg') no-repeat;
-    background-size: cover;
-	
-	
-}
-
-
 header {
  	margin-bottom: -30px;
  	padding-left: 35px;
+
+ 	@media #{$brk-minlarge} {
+      float: left;
+	  margin-left: 40px;
+ 	}
 
 
 }
@@ -27,6 +19,12 @@ nav li:last-child {
 .menu {
 	@extend %margin;
 	overflow: hidden;
+
+	@media #{$brk-minlarge} {
+      float: right;
+	   margin-right: 40px;
+ 	}
+
 }
 
 .name {
@@ -34,21 +32,22 @@ nav li:last-child {
 }
 
 .block li{
+	@include text(1em, bold, #000);
 	list-style: none;
 	margin: 20px;
-	font-weight: bold;
-	font-size: 1em;
 	display: block;
 	margin-bottom: 10px;
-	color: #000;
+	
 	
 }
 
 .bottom {
-	font-size: 0.8em;
+	@include text(1em, bold, #000);
 	float: left;
-	margin-left: 20px; 
+	margin-left: 5px; 
 }
+
+
 
 
 
