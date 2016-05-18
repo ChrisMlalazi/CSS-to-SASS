@@ -24,15 +24,15 @@ FOOTER
 	& ul li {
 	  display: inline-block;
 	}
-   
-    @media #{$brk-minlarge} {
+
+    @include minWidth {
     	clear: both;
 	    margin-top: 20px;
 	    margin-bottom: -40px;
 
     }
 
-     @media #{$brk-extra} {
+      @include maxWidth  {
     	clear: both;
 	   
 
@@ -43,7 +43,7 @@ FOOTER
 }
 
 .bottomname {
- @media #{$brk-minlarge} {
+  @include minWidth  {
       float: left;
 	  margin-top: 35px;
 	  margin-left: 40px;
@@ -55,7 +55,7 @@ FOOTER
 
 
 .bottomfooter ul {
- @media #{$brk-minlarge} {
+  @include minWidth {
       list-style: none;
 	  padding-left: 0;
 
@@ -64,7 +64,7 @@ FOOTER
 }
 
 .bottomnav {
-   @media #{$brk-minlarge}  {
+    @include minWidth   {
          & {
 
 		float: right;
@@ -114,7 +114,7 @@ FOOTER
 }
 
 .direction {
-	@media #{$brk-minlarge} {
+	 @include minWidth  {
 			display: none;
 	}
 

@@ -16,7 +16,7 @@ MEDIA
  /******max-width: 767px********/
  
 @mixin maximum {
-  @media (max-width: #{$brk-maxlarge }) {
+  @media (max-width: #{$brk-maxlarge}) {
     @content;
   }
 }
@@ -24,15 +24,16 @@ MEDIA
 
  /******min-width: 768px********/
 
-@mixin tablet {
-  @media (min-width: #{$brk-minlarge}) {
+@mixin minWidth {
+
+  @media(min-width: #{$brk-minlarge}) {
     @content;
   }
 }
 
  /******min-width: 1024px********/
 
-@mixin desktop {
+@mixin maxWidth {
   @media (min-width: #{$brk-extra}) {
     @content;
   }

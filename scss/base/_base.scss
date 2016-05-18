@@ -57,7 +57,7 @@ img {
     background-size: cover;
     color: $color-sec;
 
-    @media #{$brk-minlarge} {
+    @include minWidth {
       float: right;
 	  width: 40%;
 	  display: inline-block;
@@ -113,11 +113,11 @@ li {
 .set {
 	margin-top: -10px;
 
-	@media #{$brk-minlarge} {
+	 @include minWidth  {
         display: inline-block; 
 	}
 
-	@media #{$brk-extra} {
+	 @include maxWidth  {
         margin-top: 10px;
 	}
 

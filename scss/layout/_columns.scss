@@ -9,7 +9,7 @@ GALLERY
 	padding: 0;
 	list-style: none;
 
-	@media #{$brk-minlarge} {
+	 @include minWidth  {
       	 & li:nth-child(3n) {
             clear: left;
 		  }
@@ -26,7 +26,7 @@ GALLERY
 		}
 	}
 
-	@media #{$brk-extra } {
+	 @include maxWidth  {
       & li:nth-child(3n) {
     clear: right;
   }

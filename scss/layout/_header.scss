@@ -3,7 +3,7 @@ header {
  	margin-bottom: -30px;
  	padding-left: 35px;
 
- 	@media #{$brk-minlarge} {
+ 	 @include minWidth  {
       float: left;
 	     margin-left: 40px;
  	}
@@ -18,12 +18,12 @@ nav li:last-child {
 	@extend %margin;
 	overflow: hidden;
 
-	@media #{$brk-minlarge} {
+	 @include minWidth  {
       float: right;
 	   margin-right: 40px;
  	}
 
-    @media #{$brk-extra} {
+    @include maxWidth  {
       & {
           float: right;
           margin-right: 40px;
@@ -40,12 +40,9 @@ nav li:last-child {
   }
 
 
-
-
-
 .menu a {
 
-	@media #{$brk-minlarge} {
+	 @include minWidth {
       color: $color-prim;
 	  font-family: $stack-oswald;
  	}
@@ -74,8 +71,8 @@ nav li:last-child {
 Hamburger Menu
 *********************/
 
-@media #{$brk-maxlarge} {
-      .hamburger {
+ @include maximum  {
+    .hamburger {
     padding: 15px;
     display: block;
   }
@@ -115,7 +112,7 @@ Hamburger Menu
  	}
 
 .block {
-	@media #{$brk-minlarge } {
+	 @include minWidth  {
        & {
 		margin-bottom: 40px;
 		margin-top: 20px;
