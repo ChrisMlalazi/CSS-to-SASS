@@ -62,8 +62,8 @@ img {
 	  width: 40%;
 	  display: inline-block;
 	  padding-bottom: 30px;
-	 border-radius: 10px;
-	 margin-right: 60px;
+	  border-radius: 20px;
+	  margin-right: 85px;
  	}
 }
 
@@ -103,7 +103,7 @@ li {
 	.block &:hover {
 		transform: scale(1.3);
 		@extend %transition;
-
+      
 	}
 
 }
@@ -112,7 +112,19 @@ li {
 
 .set {
 	margin-top: -10px;
+
+	@media #{$brk-minlarge} {
+        display: inline-block; 
+	}
+
+	@media #{$brk-extra} {
+        margin-top: 10px;
+	}
+
+
 }
+
+
 
 .portfolio {
 	margin-top: 50px;

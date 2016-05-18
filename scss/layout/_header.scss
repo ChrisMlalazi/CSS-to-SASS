@@ -27,6 +27,14 @@ nav li:last-child {
 
 }
 
+.menu a {
+
+	@media #{$brk-minlarge} {
+      color: $color-prim;
+	  font-family: $stack-oswald;
+ 	}
+}
+
 .name {
 	 font-family: $stack-oswald; 
 }
@@ -91,6 +99,21 @@ Hamburger Menu
 
 }
  	}
+
+.block {
+	@media #{$brk-minlarge } {
+       & {
+		margin-bottom: 40px;
+		margin-top: 20px;
+	}
+
+	& li{
+		display: inline-block;
+	    padding: 0;
+	    
+	  }
+	}
+}
 
 
 

@@ -24,7 +24,25 @@ GALLERY
 				margin: 5%;
 				color: $color-prim;
 		}
-		 	}
+	}
+
+	@media #{$brk-extra } {
+      & li:nth-child(3n) {
+    clear: right;
+  }
+
+   & li:nth-child(6n) {
+    clear: right;
+  }
+
+   & li {
+	float: left;
+	width: 28%;
+	margin: 2%;
+	color: $color-prim;
+}
+
+	}
 }
 
 

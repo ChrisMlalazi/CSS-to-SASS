@@ -24,9 +24,67 @@ FOOTER
 	& ul li {
 	  display: inline-block;
 	}
+   
+    @media #{$brk-minlarge} {
+    	clear: both;
+	    margin-top: 20px;
+	    margin-bottom: -40px;
+
+    }
+
+}
+
+.bottomname {
+ @media #{$brk-minlarge} {
+      float: left;
+	  margin-top: 35px;
+	  margin-left: 40px;
+	  font-weight: bold;
+
+    }
+
 }
 
 
+.bottomfooter ul {
+ @media #{$brk-minlarge} {
+      list-style: none;
+	  padding-left: 0;
+
+    }
+
+}
+
+.bottomnav {
+   @media #{$brk-minlarge}  {
+         & {
+
+		float: right;
+		margin-top: 30px;
+	}
+	  & li{
+
+		float: right;
+		margin-left: 10px;
+		margin-right: 40px;
+		padding-left: 10px;
+		font-weight: bold;
+
+	}
+
+	  & li a {
+		text-decoration: none;
+		color: $color-prim;
+		font-family: $stack-oswald;
+	}
+
+	  & a:hover {
+		color: $color-hover;
+	}
+
+   }
+
+}
 
 
 .clearfix {
@@ -44,6 +102,12 @@ FOOTER
 	  & p {
 	   font-family: $stack-kalam;
 
+	}
+}
+
+.direction {
+	@media #{$brk-minlarge} {
+			display: none;
 	}
 }
 

@@ -3,7 +3,17 @@
 .blurb {
 	margin: 10px;
 	font-family: $stack-kalam;
+
+	@media #{$brk-minlarge} {
+			width: 45%;
+			float: left;
+			margin-left: 20px;
+			margin-top: 0;
+			display: inline-block;
+
+	}
 }
+
 
 h2 {
 	@include text(1em);

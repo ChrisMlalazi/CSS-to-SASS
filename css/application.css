@@ -40,8 +40,8 @@ img {
       width: 40%;
       display: inline-block;
       padding-bottom: 30px;
-      border-radius: 10px;
-      margin-right: 60px; } }
+      border-radius: 20px;
+      margin-right: 85px; } }
 .profile-picture {
   height: 200px;
   width: 200px;
@@ -63,6 +63,12 @@ img {
 
 .set {
   margin-top: -10px; }
+  @media (min-width: 768px) {
+    .set {
+      display: inline-block; } }
+  @media (min-width: 1024px) {
+    .set {
+      margin-top: 10px; } }
 
 .portfolio {
   margin-top: 50px; }
@@ -76,6 +82,13 @@ img, .profile-image, .profile-picture {
 .blurb {
   margin: 10px;
   font-family: "Kalam", Arial, "Open Sans", Arial, sans-serif; }
+  @media (min-width: 768px) {
+    .blurb {
+      width: 45%;
+      float: left;
+      margin-left: 20px;
+      margin-top: 0;
+      display: inline-block; } }
 
 h2 {
   font-size: 1em; }
@@ -132,6 +145,11 @@ nav li:last-child {
       float: right;
       margin-right: 40px; } }
 
+@media (min-width: 768px) {
+  .menu a {
+    color: #000;
+    font-family: "Oswald", Arial, "Open Sans", Arial, sans-serif; } }
+
 .name {
   font-family: "Oswald", Arial, "Open Sans", Arial, sans-serif; }
 
@@ -182,6 +200,14 @@ Hamburger Menu
 
   .bottomfooter {
     display: none; } }
+@media (min-width: 768px) {
+  .block {
+    margin-bottom: 40px;
+    margin-top: 20px; }
+  .block li {
+    display: inline-block;
+    padding: 0; } }
+
 /**************************
 MEDIA QUERIES 
 ***************************/
@@ -189,62 +215,6 @@ MEDIA QUERIES
   /**************************
   INDEX
   ***************************/
-  .blurb {
-    width: 45%;
-    float: left;
-    margin-left: 20px;
-    margin-top: 0;
-    display: inline-block; }
-
-  .menu a {
-    color: #000;
-    font-family: "Oswald", Arial, "Open Sans", Arial, sans-serif; }
-
-  .set {
-    display: inline-block;
-    background-color: #d3d3d3; }
-
-  .block {
-    margin-bottom: 40px;
-    margin-top: 20px; }
-  .block li {
-    display: inline-block;
-    padding: 0; }
-
-  .footer {
-    clear: both;
-    margin-top: 20px;
-    margin-bottom: -40px; }
-
-  .bottomname {
-    float: left;
-    margin-top: 35px;
-    margin-left: 40px;
-    font-weight: bold; }
-
-  .bottomfooter ul {
-    list-style: none;
-    padding-left: 0; }
-
-  .bottomnav {
-    float: right;
-    margin-top: 30px; }
-  .bottomnav li {
-    float: right;
-    margin-left: 10px;
-    margin-right: 40px;
-    padding-left: 10px;
-    font-weight: bold; }
-  .bottomnav li a {
-    text-decoration: none;
-    color: #000;
-    font-family: "Oswald", Arial, "Open Sans", Arial, sans-serif; }
-  .bottomnav a:hover {
-    color: #FF0000; }
-
-  .pusher {
-    height: 30px; }
-
   /**************************
   PORTFOLIO
   ***************************/
@@ -254,16 +224,6 @@ MEDIA QUERIES
   /**************************
   INDEX PAGE
   ***************************/
-  #gallery li:nth-child(3n) {
-    clear: right; }
-  #gallery li:nth-child(6n) {
-    clear: right; }
-  #gallery li {
-    float: left;
-    width: 28%;
-    margin: 2%;
-    color: #000; }
-
   .set {
     margin-top: 10px; }
 
@@ -307,6 +267,16 @@ GALLERY
       width: 40%;
       margin: 5%;
       color: #000; } }
+  @media (min-width: 1024px) {
+    #gallery li:nth-child(3n) {
+      clear: right; }
+    #gallery li:nth-child(6n) {
+      clear: right; }
+    #gallery li {
+      float: left;
+      width: 28%;
+      margin: 2%;
+      color: #000; } }
 
 .clearfix, .contact {
   clear: both; }
@@ -330,10 +300,48 @@ FOOTER
   padding: 0; }
 .footer ul li {
   display: inline-block; }
+@media (min-width: 768px) {
+  .footer {
+    clear: both;
+    margin-top: 20px;
+    margin-bottom: -40px; } }
+
+@media (min-width: 768px) {
+  .bottomname {
+    float: left;
+    margin-top: 35px;
+    margin-left: 40px;
+    font-weight: bold; } }
+
+@media (min-width: 768px) {
+  .bottomfooter ul {
+    list-style: none;
+    padding-left: 0; } }
+
+@media (min-width: 768px) {
+  .bottomnav {
+    float: right;
+    margin-top: 30px; }
+  .bottomnav li {
+    float: right;
+    margin-left: 10px;
+    margin-right: 40px;
+    padding-left: 10px;
+    font-weight: bold; }
+  .bottomnav li a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Oswald", Arial, "Open Sans", Arial, sans-serif; }
+  .bottomnav a:hover {
+    color: #FF0000; } }
 
 .contact {
   margin-top: 80px; }
 .contact p {
   font-family: "Kalam", Arial, "Open Sans", Arial, sans-serif; }
+
+@media (min-width: 768px) {
+  .direction {
+    display: none; } }
 
 /*# sourceMappingURL=application.css.map */
