@@ -1,9 +1,40 @@
-
-//Text
+ 
+/***********************
+TEXT
+*******************/
 
 @mixin text($size: null, $weight: null, $color: null) {
      font-size: $size;
      font-weight: $weight;
      color: $color;
+}
+
+/***********************
+MEDIA
+*******************/
+
+ /******max-width: 767px********/
+ 
+@mixin maximum {
+  @media (max-width: #{$brk-maxlarge }) {
+    @content;
+  }
+}
+
+
+ /******min-width: 768px********/
+
+@mixin tablet {
+  @media (min-width: #{$brk-minlarge}) {
+    @content;
+  }
+}
+
+ /******min-width: 1024px********/
+
+@mixin desktop {
+  @media (min-width: #{$brk-extra}) {
+    @content;
+  }
 }
 
