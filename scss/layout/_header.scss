@@ -5,10 +5,8 @@ header {
 
  	@media #{$brk-minlarge} {
       float: left;
-	  margin-left: 40px;
+	     margin-left: 40px;
  	}
-
-
 }
 
 
@@ -25,7 +23,24 @@ nav li:last-child {
 	   margin-right: 40px;
  	}
 
-}
+    @media #{$brk-extra} {
+      & {
+          float: right;
+          margin-right: 40px;
+        }
+         
+           & li a{
+          color: $color-prim;
+          font-family: $stack-oswald;
+         }
+
+        }
+
+  }
+
+
+
+
 
 .menu a {
 
@@ -45,8 +60,6 @@ nav li:last-child {
 	margin: 20px;
 	display: block;
 	margin-bottom: 10px;
-	
-	
 }
 
 .bottom {

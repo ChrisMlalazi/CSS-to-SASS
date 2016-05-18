@@ -32,6 +32,14 @@ FOOTER
 
     }
 
+     @media #{$brk-extra} {
+    	clear: both;
+	   
+
+    }
+
+
+
 }
 
 .bottomname {
@@ -109,6 +117,7 @@ FOOTER
 	@media #{$brk-minlarge} {
 			display: none;
 	}
+
 }
 
 

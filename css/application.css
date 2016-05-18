@@ -144,6 +144,13 @@ nav li:last-child {
     .menu {
       float: right;
       margin-right: 40px; } }
+  @media (min-width: 1024px) {
+    .menu {
+      float: right;
+      margin-right: 40px; }
+    .menu li a {
+      color: #000;
+      font-family: "Oswald", Arial, "Open Sans", Arial, sans-serif; } }
 
 @media (min-width: 768px) {
   .menu a {
@@ -208,47 +215,6 @@ Hamburger Menu
     display: inline-block;
     padding: 0; } }
 
-/**************************
-MEDIA QUERIES 
-***************************/
-@media screen and (min-width: 768px) {
-  /**************************
-  INDEX
-  ***************************/
-  /**************************
-  PORTFOLIO
-  ***************************/
-  .direction {
-    display: none; } }
-@media screen and (min-width: 1024px) {
-  /**************************
-  INDEX PAGE
-  ***************************/
-  .set {
-    margin-top: 10px; }
-
-  .block li {
-    display: inline-block; }
-
-  .footer {
-    clear: both; }
-
-  .direction {
-    display: none; }
-
-  /**************************
-  PORTFOLIO
-  ***************************/
-  header {
-    float: left;
-    margin-left: 40px; }
-
-  .menu {
-    float: right;
-    margin-right: 40px; }
-  .menu li a {
-    color: #000;
-    font-family: "Oswald", Arial, "Open Sans", Arial, sans-serif; } }
 /****************************
 GALLERY
 *****************************/
@@ -305,6 +271,9 @@ FOOTER
     clear: both;
     margin-top: 20px;
     margin-bottom: -40px; } }
+@media (min-width: 1024px) {
+  .footer {
+    clear: both; } }
 
 @media (min-width: 768px) {
   .bottomname {
